@@ -1,73 +1,63 @@
-# Welcome to your Lovable project
+# 🧠 MindAid — Global Mental Health Chatbot
 
-## Project info
+**MindAid** is a global, privacy-first web application designed to provide **anonymous AI-assisted mental health support** to individuals seeking a safe space to talk, reflect, and find help — anytime, anywhere.
 
-**URL**: https://lovable.dev/projects/5c716550-e634-4308-a20d-43ac2de3cdd7
+---
 
-## How can I edit this code?
+## 💡 Problem
 
-There are several ways of editing your application.
+Mental health is a global challenge. Millions of people around the world lack access to affordable, immediate, and stigma-free mental health care. Traditional support systems are often too slow, too costly, or unavailable in critical moments.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5c716550-e634-4308-a20d-43ac2de3cdd7) and start prompting.
+## 🚀 Solution
 
-Changes made via Lovable will be committed automatically to this repo.
+MindAid provides **empathetic, AI-powered conversations** that offer emotional support, self-care guidance, and access to verified mental health resources.  
+It bridges the gap between **immediate listening** and **professional help**, ensuring that everyone has access to support when they need it most.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## ✨ Key Features
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+| Feature | Description |
+|----------|-------------|
+| 💬 **AI Chatbot** | Offers anonymous, human-like mental health conversations using OpenAI or Hugging Face models. |
+| 📅 **Mood Tracker** | Daily mood logging with visual trends to promote emotional awareness. |
+| ⏰ **Self-Care Reminders** | Gentle reminders for mindfulness, hydration, journaling, and rest. |
+| 📚 **Resource Library** | Curated collection of articles, videos, and mental health helplines worldwide. |
+| 🕊 **Anonymous Login** | Users can chat privately or use local storage — no data tracking. |
+| 🌙 **Light/Dark Mode** | Designed for comfort, accessibility, and user preference. |
+| 🔒 **Privacy-First Design** | No data mining, no profiling — your mental wellness stays yours. |
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🧰 Tech Stack
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+**Frontend:**  
+- [Next.js 14 (App Router)](https://nextjs.org/)  
+- [Tailwind CSS](https://tailwindcss.com/)  
+- [Framer Motion](https://www.framer.com/motion/)  
 
-# Step 3: Install the necessary dependencies.
-npm i
+**Backend:**  
+- [Convex](https://convex.dev/) or [Firebase](https://firebase.google.com/) for real-time chat & session management  
+- [MongoDB Atlas](https://www.mongodb.com/atlas) / [Firestore](https://firebase.google.com/products/firestore) for data storage  
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+**AI Layer:**  
+- [OpenAI GPT Models](https://platform.openai.com/docs/) or [Hugging Face Transformers](https://huggingface.co/)  
 
-**Edit a file directly in GitHub**
+**Authentication (Optional):**  
+- [NextAuth.js](https://next-auth.js.org/) for secure therapist dashboards or user sessions  
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 🏗 Implementation Workflow
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### 1. **Planning**
+- Define conversational tone, prompt strategy, and safety filters.  
+- Map user flows: chat, mood tracking, and resource navigation.  
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/5c716550-e634-4308-a20d-43ac2de3cdd7) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### 2. **Frontend Setup**
+```bash
+npx create-next-app@latest mindaid
+cd mindaid
+npm install tailwindcss framer-motion next-auth
